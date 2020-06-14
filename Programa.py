@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog as FileDialog
-import webbrowser as wb
+import webbrowser
 import tkinter
 import math
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,7 +62,8 @@ class menu(tkinter.Tk):
         mainloop()
 
     def ayuda(menu): #cambiar localizacion cuando el manual de usuario este terminado
-        wb.open_new(r'')
+        webbrowser.open("https://estudianteccr-my.sharepoint.com/:b:/g/personal/danny_jimenez_estudiantec_cr/EbVoy4g0dS5Oo3Spt24_JoIBgP3jRA-jDLys0OzgZfw56w?e=2oVKLq", new=2, autoraise=True)
+        
         
     def Info(menu):
         messagebox.showinfo("Acerca De", "Nombre del Programa: Encriptacion y Desencriptacion \nAutores: Roberto José Garita Mata\n               Danny Jossiel Jimenez Sevilla \nFecha: 06/12/2020 \nVersión: 1.0")
@@ -233,7 +234,7 @@ class ingresar_desencriptacion(tkinter.Tk):
 
 #1
 def decimal_binario(numero):
-    #""
+    #""""
     #La funcion binario auxiliar de la get llave
 
     #Parametros:
